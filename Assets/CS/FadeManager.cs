@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;   // UI使うので追加
 
+//*********************************
+//// フェードシステムスクリプト
+//*********************************
 public class FadeManager : MonoBehaviour
-{// フェードシステムスクリプト
-
+{
     // フェードの管理フラグ変数
     public static bool isFadeInstance = false;
 
@@ -14,6 +16,8 @@ public class FadeManager : MonoBehaviour
 
     public float alpha = 0.0f;      // フェードの透過率
     public float fadeSpeed = 0.2f;  // フェードのスピード
+
+    private Image fadeImage; // Image参照
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +32,14 @@ public class FadeManager : MonoBehaviour
         else
         {// 起動時以外は重複しないようにする
             Destroy(this);
+        }
+
+        // 自分自身のImageを取得
+        fadeImage = GetComponent<Image>();
+
+        if (fadeImage != null)
+        {
+            fadeImage.color = new Color(0, 0, 0, 0);
         }
     }
 
@@ -77,6 +89,10 @@ public class FadeManager : MonoBehaviour
     {
         isFadeIn = true;    // Inをtrue
         isFadeOut = false;  // Outをfalse
+
+        // 必ず表示してから開始
+        if (fadeImage != null)
+            fadeImage.gameObject.SetActive(true);
     }
 
     // フェードアウト用の関数
@@ -84,6 +100,9 @@ public class FadeManager : MonoBehaviour
     {
         isFadeIn = false;   // Inをfalse
         isFadeOut = true;   // Outをtrue
+
+        if (fadeImage != null && !fadeImage.gameObject.activeSelf)
+            fadeImage.gameObject.SetActive(true);
     }
 
 }

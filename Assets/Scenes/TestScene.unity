@@ -438,7 +438,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!64 &121746785
 MeshCollider:
@@ -482,7 +482,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1fb07298c309f7f4a8a84c0e2c9836c6, type: 2}
+  - {fileID: 2100000, guid: 2b6955b22b510b34a84307bd45c29206, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -893,7 +893,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 4704
+  m_ColorTemperature: 6189
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -908,13 +908,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.61394554, y: -0.25445578, z: 0.047322582, w: 0.7457103}
+  m_LocalRotation: {x: 0.5735764, y: 0, z: 0, w: 0.8191521}
   m_LocalPosition: {x: 0, y: 10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 70.007, y: -70.052, z: -45.024}
+  m_LocalEulerAnglesHint: {x: 70, y: 0, z: 0}
 --- !u!114 &410087042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1291,6 +1291,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 7632776702974249344, guid: 38e52ddbf03e03842b6926f94c676021,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7632776702974249344, guid: 38e52ddbf03e03842b6926f94c676021,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5b33ac21af63127479bc5d192b9233d0, type: 2}
     - target: {fileID: 8452802610713327522, guid: 38e52ddbf03e03842b6926f94c676021,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1573,6 +1583,12 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 7632776702974249344, guid: 38e52ddbf03e03842b6926f94c676021,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 52ddd53a1d386574b99ede340965ad5f,
+        type: 3}
     - target: {fileID: 8452802610713327522, guid: 38e52ddbf03e03842b6926f94c676021,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1703,6 +1719,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 7632776702974249344, guid: 38e52ddbf03e03842b6926f94c676021,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c9d934d82ee8adb4b9da533ee3ae8423, type: 2}
     - target: {fileID: 8452802610713327522, guid: 38e52ddbf03e03842b6926f94c676021,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -2522,6 +2543,12 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 7632776702974249344, guid: 38e52ddbf03e03842b6926f94c676021,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 52ddd53a1d386574b99ede340965ad5f,
+        type: 3}
     - target: {fileID: 8452802610713327522, guid: 38e52ddbf03e03842b6926f94c676021,
         type: 3}
       propertyPath: m_LocalScale.x

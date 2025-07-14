@@ -33,7 +33,7 @@ public class SceneController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // スペースキーが押されたら
+        // F1キーが押されたら
         if (Input.GetKey(KeyCode.F1))
         {
             // 現在のシーン番号に1を足した数字を保持する
